@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		19FED24D23BCA07E009D78DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FED24C23BCA07E009D78DD /* AppDelegate.swift */; };
-		19FED24F23BCA07E009D78DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FED24E23BCA07E009D78DD /* ViewController.swift */; };
 		19FED25223BCA07E009D78DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19FED25023BCA07E009D78DD /* Main.storyboard */; };
 		19FED25423BCA07F009D78DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19FED25323BCA07F009D78DD /* Assets.xcassets */; };
 		19FED25723BCA07F009D78DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19FED25523BCA07F009D78DD /* LaunchScreen.storyboard */; };
 		19FED26223BCA07F009D78DD /* tableviewpracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FED26123BCA07F009D78DD /* tableviewpracticeTests.swift */; };
 		19FED26D23BCA07F009D78DD /* tableviewpracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FED26C23BCA07F009D78DD /* tableviewpracticeUITests.swift */; };
+		19FED27B23BCA0EC009D78DD /* VediolListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FED27A23BCA0EC009D78DD /* VediolListViewController.swift */; };
+		19FED27D23BCB08B009D78DD /* VedioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FED27C23BCB08B009D78DD /* VedioCell.swift */; };
+		19FED27F23BCB4F9009D78DD /* Vedio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FED27E23BCB4F9009D78DD /* Vedio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		19FED24923BCA07E009D78DD /* tableviewpractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tableviewpractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19FED24C23BCA07E009D78DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		19FED24E23BCA07E009D78DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		19FED25123BCA07E009D78DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		19FED25323BCA07F009D78DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19FED25623BCA07F009D78DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		19FED26823BCA07F009D78DD /* tableviewpracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tableviewpracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		19FED26C23BCA07F009D78DD /* tableviewpracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableviewpracticeUITests.swift; sourceTree = "<group>"; };
 		19FED26E23BCA07F009D78DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19FED27A23BCA0EC009D78DD /* VediolListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VediolListViewController.swift; sourceTree = "<group>"; };
+		19FED27C23BCB08B009D78DD /* VedioCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VedioCell.swift; sourceTree = "<group>"; };
+		19FED27E23BCB4F9009D78DD /* Vedio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vedio.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				19FED24C23BCA07E009D78DD /* AppDelegate.swift */,
-				19FED24E23BCA07E009D78DD /* ViewController.swift */,
 				19FED25023BCA07E009D78DD /* Main.storyboard */,
 				19FED25323BCA07F009D78DD /* Assets.xcassets */,
 				19FED25523BCA07F009D78DD /* LaunchScreen.storyboard */,
 				19FED25823BCA07F009D78DD /* Info.plist */,
+				19FED27A23BCA0EC009D78DD /* VediolListViewController.swift */,
+				19FED27C23BCB08B009D78DD /* VedioCell.swift */,
+				19FED27E23BCB4F9009D78DD /* Vedio.swift */,
 			);
 			path = tableviewpractice;
 			sourceTree = "<group>";
@@ -256,8 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19FED24F23BCA07E009D78DD /* ViewController.swift in Sources */,
+				19FED27D23BCB08B009D78DD /* VedioCell.swift in Sources */,
+				19FED27F23BCB4F9009D78DD /* Vedio.swift in Sources */,
 				19FED24D23BCA07E009D78DD /* AppDelegate.swift in Sources */,
+				19FED27B23BCA0EC009D78DD /* VediolListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
